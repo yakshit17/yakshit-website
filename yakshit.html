@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yakshit Goel - Portfolio</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #191654, #43c6ac);
+      color: #f3f3f3;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(25,25,38,0.96);
+      padding: 40px 36px;
+      border-radius: 18px;
+      box-shadow: 0 8px 40px rgba(25,25,38,0.23);
+    }
+    h1, h2, h3 { margin-bottom: 0.6em; letter-spacing: 1px;}
+    h1 { color: #15e4fc; font-size: 2.8rem; text-align: center;}
+    h2 { color: #ff9572; border-bottom: 1px solid #3fffa1; padding-bottom: 0.2em;}
+    h3 { color: #ffd700; }
+    .section {
+      margin-top: 35px;
+      padding: 25px;
+      background: rgba(36,45,65,0.92);
+      border-radius: 15px;
+      box-shadow: 0 2px 12px rgba(61, 218, 251, 0.10);
+      position: relative;
+    }
+    ul, .favorites-list { margin: 1em 0; padding-left: 1.3em;}
+    li { margin-bottom: 6px; }
+    .flex-row { display: flex; gap: 36px; align-items: center; flex-wrap: wrap;}
+    .avatar { width: 92px; height:92px; border-radius:18px; object-fit:cover; box-shadow:0 3px 18px rgba(0,0,0,0.18);}
+    .avatar-circle { border-radius:50%; }
+    .photos, .school-photos, .college-photos, .trip-photos {
+      display: flex; gap: 18px; margin-top: 16px; flex-wrap: wrap; justify-content: flex-start;
+    }
+    .photos img, .school-photos img, .college-photos img, .trip-photos img {
+      width: 110px; height: 110px; object-fit: cover; border-radius: 14px; border: 2px solid #15e4fc;
+      transition: transform 0.18s cubic-bezier(.63,1.15,.65,1);
+    }
+    .photos img:hover, .school-photos img:hover, .college-photos img:hover, .trip-photos img:hover {
+      transform: scale(1.08) rotate(-2deg);
+      border: 2.5px solid #ff9572;
+      z-index:2;
+    }
+    .person-card {
+      display:flex;align-items:center;gap:18px;background:rgba(28,28,40,0.84);border-radius:10px;
+      padding:13px 17px;margin:10px 0;box-shadow:0 1.5px 11px rgba(31,220,255,0.04);
+      flex-wrap:wrap;
+    }
+    .person-card .avatar { box-shadow:0 4px 16px rgba(255,159,72,0.14);}
+    .detail-row b { color: #3fffa1;}
+    .small {font-size:0.92em;color:#ccc;}
+    .contacts-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.8em 0 0.4em 0;
+    }
+    .contacts-list li {margin: 9px 0; font-size:1.06em;}
+    .contacts-list b { color: #3fffa1;}
+    .contacts-list a {color: #15e4fc; text-decoration: none;}
+    .contacts-list a:hover {text-decoration: underline;}
+    /* Icon Contact Bar */
+    .contact-bar {
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 34px;
+      background: linear-gradient(90deg,#15224a 60%, #43c6ac 120%);
+      box-shadow:0 -4px 34px #232857;
+      padding: 22px 0 18px 0;
+      border-radius: 0 0 18px 18px;
+      margin-top: 38px;
+      position: relative;
+    }
+    .contact-bar a {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: rgba(21,228,252,0.11);
+      border-radius: 50%; width:48px; height:48px;
+      transition: background 0.18s, transform 0.16s;
+      box-shadow: 0 1.5px 8px #20e2fc44;
+      border: 2px solid #232857;
+    }
+    .contact-bar a:hover {
+      background: linear-gradient(135deg, #3fffa1 40%, #ff9572 100%);
+      transform: scale(1.13) rotate(-9deg);
+      border-color: #ffd700;
+    }
+    .contact-bar img { width: 28px; height: 28px;}
+    @media (max-width: 700px) {
+      .container {padding:10px;}
+      .flex-row {flex-direction:column; gap:16px;}
+      .contact-bar {gap:14px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Yakshit Agarwal</h1>
+
+    <!-- About Me Section -->
+    <div class="section">
+      <h2>About Me</h2>
+      <div class="flex-row">
+        <img src="C:\Users\Yakshit Goel\OneDrive\Documents\yakshit\image/profile .JPG" alt="Yakshit Goel" class="avatar avatar-circle"/>
+        <div>
+          <div class="detail-row"><b>Age:</b> 17 &nbsp; <b>Birthdate:</b> 17 June 2008</div>
+          <ul class="favorites-list">
+            <li><b>Favorite color:</b> Blue and Lite Green </li>
+            <li><b>Favorite game:</b> All offline games and Mech Arena </li>
+            <li><b>Favorite music:</b> Lofi, Pop</li>
+            <li><b>Favorite movie:</b> not specefic </li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        Hi! I'm Yakshit, from Hyderabad like to travel, have chill with friends and family, finance, and all things of tech. I love to do mechanism's, listening to chill beats, and exploring new technology. Determined to make an impact with my creativity and passion!
+      </p>
+    </div>
+
+    <!-- Contact Details Section -->
+    <div class="section">
+      <h2>Contact Details</h2>
+      <ul class="contacts-list">
+        <li><b>Gmail:</b> <a href="mailto:yakshit1762008@gmail.com">yakshit1762008@gmail.com</a></li>
+        <li><b>Phone:</b> <a href="tel:7794897465">7794897465</a></li>
+        <li><b>Instagram:</b> <a href="https://instagram.com/yakshit.ag55" target="_blank">@Yakshit.ag55</a></li>
+        <li><b>Snapchat:</b> <a href="https://snapchat.com/add/yakshit_goel17" target="_blank">@yakshit_goel17</a></li>
+        <li><b>Discord:</b> <a href="https://discord.com/users/1433446968482463866" target="_blank">@yakshit.ag17</a></li>
+      </ul>
+    </div>
+
+<!-- Family & Friends Section -->
+    <div class="section">
+      <h2>My Family & Friends</h2>
+      <div class="person-card">
+        <img src="dad-photo.jpg" alt="Father" class="avatar"/>
+        <div>
+          <div><b>Father:</b> Mukesh Agarwal</div>
+          <div><b>Birthdate:</b> 15 June 1979</div>
+          <div><b>Contact:</b> +91-9177339100</div>
+          <div class="small">Loves reading, guiding me in life and studies.</div>
+        </div>
+      </div>
+      <div class="person-card">
+        <img src="mom-photo.jpg" alt="Mother" class="avatar"/>
+        <div>
+          <div><b>Mother:</b> Rita Agarwal</div>
+          <div><b>Birthdate:</b> 15 December 1979</div>
+          <div><b>Contact:</b> +91-9246346978</div>
+          <div class="small">Always supportive, best cook, my inspiration.</div>
+        </div>
+      </div>
+      <div class="person-card">
+        <img src="brother-photo.jpg" alt="Brother" class="avatar"/>
+        <div>
+          <div><b>Brother:</b> Taruver Agarwal</div>
+          <div><b>Birthdate:</b> 30 November 2005</div>
+          <div><b>Contact:</b> +91-955096412</div>
+          <div class="small">Great at sports and tech, always fun to be around.</div>
+        </div>
+      </div>
+      <h3>Friends</h3>
+      <div class="person-card">
+        <img src="friend1.jpg" alt="Amit Sharma" class="avatar"/>
+        <div>
+          <div><b>Name:</b>Chaitanya</div>
+          <div><b>Birthdate:</b> 7 July 2008</div>
+          <div><b>Contact:</b> +91-98xxxxxx04</div>
+          <div class="small">Best friend, coding buddy, and cricket lover.</div>
+        </div>
+      </div>
+      <div class="person-card">
+        <img src="friend2.jpg" alt="Priya Reddy" class="avatar"/>
+        <div>
+          <div><b>Name:</b> Yadunath D. M.</div>
+          <div><b>Birthdate:</b> 7 July 2009</div>
+          <div><b>Contact:</b> +91-9032151142</div>
+          <div class="small">my schoolmate(gr-1508) </div>
+        </div>
+      </div>
+      <div class="person-card">
+        <img src="friend2.jpg" alt="Priya Reddy" class="avatar"/>
+        <div>
+          <div><b>Name:</b> Likhith B.</div>
+          <div><b>Birthdate:</b> 23 April 2008</div>
+          <div><b>Contact:</b> +91-98xxxxxx05</div>
+          <div class="small">Project partner, creative genius, always helps me out.</div>
+        </div>
+      </div>
+      <div class="person-card">
+        <img src="friend2.jpg" alt="Priya Reddy" class="avatar"/>
+        <div>
+          <div><b>Name:</b> Akhil k.</div>
+          <div><b>Birthdate:</b> 23 April 2008</div>
+          <div><b>Contact:</b> +91-98xxxxxx05</div>
+          <div class="small">Project partner, creative genius, always helps me out.</div>
+        </div>
+      </div>
+      <!-- Add more friends if needed -->
+    </div>
+
+    <!-- School Section -->
+    <div class="section">
+      <h2>About My School</h2>
+      <div class="flex-row">
+        <img src="school-logo.png" alt="School Logo" class="avatar"/>
+        <div>
+          <div class="detail-row"><b>School Name:</b> Neelkanth Vidyapeeth International School (snvp)</div>
+          <div class="detail-row"><b>Admission No.:</b> 1043 &nbsp; <b>GR No.:</b> 1014</div>
+          <div class="detail-row"><b>Classes Studied:</b> 5th to 10th</div>
+        </div>
+      </div>
+      <div class="school-photos">
+        <img src="school-photo1.jpg" alt="School Function"/>
+        <img src="school-photo2.jpg" alt="Sports Day"/>
+        <!-- Add more school photos -->
+      </div>
+    </div>
+
+    <!-- College Section -->
+    <div class="section">
+      <h2>About My College</h2>
+      <div class="flex-row">
+        <img src="college-logo.png" alt="College Logo" class="avatar"/>
+        <div>
+          <div class="detail-row"><b>College Name:</b> St. Mary's Junior College</div>
+          <div class="detail-row"><b>Admission No.:</b> 548 &nbsp; <b>Course:</b> Maths Economics and Commerce (MEC)</div>
+        </div>
+      </div>
+      <div class="college-photos">
+        <img src="college-photo1.jpg" alt="Campus"/>
+        <img src="college-photo2.jpg" alt="Lab Group"/>
+        <!-- Add more college photos -->
+      </div>
+    </div>
+
+    <!-- Personal & Trips Photos -->
+    <div class="section">
+      <h2>My Personal & Trip Photos</h2>
+      <div class="trip-photos">
+        <img src="IMG-20250929-WA0029.jpg" alt="Personal"/>
+        <img src="IMG-20250929-WA0049.jpg" alt="Personal"/>
+        <img src="IMG-20250929-WA0052.jpg" alt="Personal"/>
+        <img src="IMG-20250929-WA0037.jpg" alt="Personal"/>
+        <img src="IMG-20250929-WA0045.jpg" alt="Personal"/>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Bar with Only Icons at the End -->
+  <div class="contact-bar">
+    <a href="mailto:yakshit1762008@gmail.com" title="Gmail"><img src="gmail.png" alt="Gmail"/></a>
+    <a href="tel:+91XXXXXXX" title="Phone"><img src="phone.png" alt="Phone"/></a>
+    <a href="https://instagram.com/YOUR_INSTAGRAM_ID" title="Instagram" target="_blank"><img src="instagram.png" alt="Instagram"/></a>
+    <a href="https://snapchat.com/add/YOUR_SNAPCHAT_ID" title="Snapchat" target="_blank"><img src="snapchat.png" alt="Snapchat"/></a>
+    <a href="https://discord.com/users/YOUR_DISCORD_ID" title="Discord" target="_blank"><img src="discord.png" alt="Discord"/></a>
+  </div>
+</body>
+</html>
